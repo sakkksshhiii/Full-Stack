@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals</title>
+</head>
+<body>
+    <div><ul><li>item-1
+    item-2
+    item-3
+    item-4
+    item-5
+    item-6
+    item-7</li></ul></div>
+
+    <script>
+    var string1='this is a string1';
+    var string1='this is a string2';
+console.log(string1);
+        
+let u="a";
+{
+    let u="g";
+    console.log(u);
+}
+console.log(u);
+
+const a ="this can not be changed";
+console.log(a);
+
+let age=47;
+if(age>18){
+    console.log('you can drink');
+}
+else{
+    console.log("you can't drink");
+}
+
+let Age=4;
+if(age==2){
+    console.log('you can drink');
+}
+else if(age==5){
+    console.log("you can't drink");
+}
+else{
+    console.log("do whatever you want to do");
+}
+
+const cups=45;
+switch (cups) {
+    case 4:{
+        console.log("the value of cups is 4")
+        break; }
+    case 41:{
+        console.log("the value of cups is 41")
+        break;}
+    case 45:{
+        console.log("the value of cups is 45")
+        break;}
+    case 56:{
+        console.log("the value of cups is 56")
+        break; }
+    case 38:{
+        console.log("the value of cups is 38")
+        break;}
+
+    default:
+        break;
+    }
+        // array and object
+
+        let names=[19,12,4,'sakshi',true, undefined];
+        console.log(names);
+        console.log(names.length);
+        names=names.sort();
+        names.push("this is pushed");
+        console.log(names);
+        let Names= new Array(23);
+        console.log(Names);
+
+
+        // function
+
+        function greet (name){
+            console.log( name + ' is a good girl');
+        }
+let name1= "sakshi"
+let name2="turtuk"
+let name3="shubhi"
+greet(name1)
+greet(name2)
+greet(name3)
+
+
+    </script>
+</body>
+</html>
